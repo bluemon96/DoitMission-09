@@ -1,16 +1,10 @@
 package com.tutorial.doitmission_09;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.Service;
 import android.content.Context;
 import android.os.Bundle;
-import android.text.Layout;
-import android.view.FocusFinder;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,13 +12,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.snackbar.Snackbar;
+import androidx.appcompat.app.AppCompatActivity;
 
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.zip.Inflater;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -51,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         c = findViewById(R.id.count);
         count= 0;
+
         for (int i = 1;i<11;i++){
             adapter.addItem("홍길동"+i,"1996년 01월 11일","010-1234-5678: "+count++);
         }
